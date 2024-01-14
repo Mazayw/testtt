@@ -9,7 +9,7 @@
 // test: Adding missing tests or correcting existing tests
 
 module.exports = {
-  extends: ['@commitlint/config-conventional'],
+  extends: [],
   rules: {
     'body-leading-blank': [1, 'always'],
     'body-max-line-length': [2, 'always', 100],
