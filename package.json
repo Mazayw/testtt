@@ -27,5 +27,17 @@
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.1",
     "typescript": "^5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint && npm run format"
+    }
+  },
+  "lint-staged": {
+    "srx/**/*.{ts,tsx,js,jsx}": [
+      "npm run lint",
+      "npm run format"
+    ]
   }
 }
